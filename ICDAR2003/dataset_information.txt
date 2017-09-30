@@ -1,0 +1,1 @@
+downloaded from http://www.iapr-tc11.org/dataset/ICDAR2003_RobustReading/TrialTrain/char.zip
