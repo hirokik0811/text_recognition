@@ -1,0 +1,1 @@
+obtained from http://www.iapr-tc11.org/dataset/ICDAR2003_RobustReading/TrialTrain/scene.zip
