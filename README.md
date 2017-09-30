@@ -21,4 +21,4 @@ We use CNN to detect and recognize text from an image. As the paper suggests, th
  1024 (fully connected layer with dropout)->
 2(detection) or 62(recognition) (fully connected layer to output).
 
-As you can see, we make some minor changes from the original paper such as the first fully connected layer with 1024. 
+As you can see, we make some minor changes from the original paper such as the first fully connected layer with 1024 neurons. 
