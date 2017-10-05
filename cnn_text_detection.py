@@ -96,6 +96,7 @@ def train_cnn(data):
                                                         keep_prob: 1.0}))
     
 def classify(image):
+    """classifies to two classes: character or non-character."""
     sess = tf.InteractiveSession()
     sess.run(tf.initialize_all_variables())
     saver = tf.train.Saver()
