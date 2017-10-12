@@ -11,14 +11,18 @@ For training neural networks for recognition and detection, we are going to use 
 
 ## convolutional neural networks
 
-We use CNN to detect and recognize text from an image. As the paper suggests, the two networks have an identical structure except the number of filters of convolutional layers, n1 and n2. 
+We use CNN to detect and recognize text from an image. As the paper suggests, the two networks have an identical structure except the number of filters of convolutional layers, n1 and n2. Each 
 
 32x32x1 (input layer)->
-25x25xn1 (convolutional layer1)->
-5x5xn1 (average pooling layer1)->
-4x4xn2 (convolutional layer2)->
-2x2xn2 (average pooling layer2)->
+32x32xn1 (convolutional layer1, 8x8 filters)->
+16x16xn1 (average pooling layer1)->
+16x16xn2 (convolutional layer2, 8x8 filters)->
+8x8xn2 (average pooling layer2)->
  1024 (fully connected layer with dropout)->
 2(detection) or 62(recognition) (fully connected layer to output).
 
-As you can see, we make some minor changes from the original paper such as the first fully connected layer with 1024 neurons. 
+As you can see, we make some minor changes from the paper. 
+
+## problem ##
+With large N1 and N2, the network does not learn (or its learning is too slow). 
+We need more dataset with various types of images. 
