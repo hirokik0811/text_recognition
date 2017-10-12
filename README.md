@@ -14,9 +14,9 @@ For training neural networks for recognition and detection, we are going to use 
 We use CNN to detect and recognize text from an image. As the paper suggests, the two networks have an identical structure except the number of filters of convolutional layers, n1 and n2. Each 
 
 32x32x1 (input layer)->
-32x32xn1 (convolutional layer1, 8x8 filters)->
+32x32xn1 (convolutional layer1, filtershape 8x8)->
 16x16xn1 (average pooling layer1)->
-16x16xn2 (convolutional layer2, 8x8 filters)->
+16x16xn2 (convolutional layer2, filtershape 8x8)->
 8x8xn2 (average pooling layer2)->
  1024 (fully connected layer with dropout)->
 2(detection) or 62(recognition) (fully connected layer to output).
